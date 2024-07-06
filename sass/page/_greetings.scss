@@ -4,15 +4,32 @@
 	padding: 60px;
 	text-align: center;
 
+	@include mq(md) {
+		padding: 49px 20px 39px 20px;
+	}
+
 	.greetings__title {
 		color: $accent-color;
-		font-size: 25px;
+		font-size: 30px;
+		font-weight: bold;
+
+		@include mq(md) {
+			font-size: 25px;
+		}
 	}
 
 	.greetings__text {
-		line-height: 1.8;
 		margin-top: 15px;
 		position: relative;
+
+		@include mq(lg) {
+			text-align: left;
+			font-size: 16px;
+		}
+
+		@include mq(md) {
+			margin-top: 17px;
+		}
 
 		&::after {
 			content: url(../img/paw2.svg);
@@ -20,7 +37,15 @@
 			height: 77px;
 			position: absolute;
 			top: 47px;
-			right: 76px;
+			right: 26px;
+
+			@include mq(md) {
+				width: 68px;
+				height: 63px;
+				top: auto;
+				right: 8px;
+				bottom: 8px;
+			}
 		}
 	}
 }

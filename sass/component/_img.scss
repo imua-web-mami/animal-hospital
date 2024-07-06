@@ -1,0 +1,15 @@
+@use "../global/forward" as*;
+
+.img-sp {
+	display: none;
+
+	@include mq(md) {
+		display: block;
+	}
+}
+
+.img-pc {
+	@include mq(md) {
+		display: none;
+	}
+}

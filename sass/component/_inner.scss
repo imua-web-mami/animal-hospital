@@ -7,7 +7,7 @@
   padding-inline: 60px;
   margin-inline: auto;
 
-	@include mq(md) {
-		padding-inline: 30px;
+	@include mq(lg) {
+		padding-inline: 20px;
 	}
 }

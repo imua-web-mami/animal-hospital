@@ -1,0 +1,63 @@
+@use "../global/forward" as*;
+
+.contact {
+	padding: 62px 0 80px 0;
+	background: $bg-color;
+}
+
+.contact__text {
+	margin-top: 25px;
+	text-align: center;
+	font-size: 17px;
+}
+
+// .contact__form-box {
+// 	display: grid;
+// 	grid-template-columns: 26% 74%;
+// }
+
+.contact__label {
+	display: grid;
+	grid-template-columns: 15% 75%;
+	gap: 29px;
+	vertical-align: top;
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: bold;
+
+	&:nth-child(1) {
+		margin-top: 39px;
+	}
+}
+
+.form-text {
+	border: none;
+	grid-column: 2 / 3;
+	height: 40px;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.textarea {
+	height: 300px;
+	resize: none;
+}
+
+.contact__btn {
+	width: 200px;
+	height: 50px;
+	background: $accent-color;
+	color: $main-color;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 10px;
+	display: block;
+	margin-inline: auto;
+	margin-top: 50px;
+	cursor: pointer;
+	transition: .3s;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

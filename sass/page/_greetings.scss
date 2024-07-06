@@ -1,0 +1,26 @@
+@use "../global/forward" as*;
+
+.greetings {
+	padding: 60px;
+	text-align: center;
+
+	.greetings__title {
+		color: $accent-color;
+		font-size: 25px;
+	}
+
+	.greetings__text {
+		line-height: 1.8;
+		margin-top: 15px;
+		position: relative;
+
+		&::after {
+			content: url(../img/paw2.svg);
+			width: 84px;
+			height: 77px;
+			position: absolute;
+			top: 47px;
+			right: 76px;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+@use "../global/forward" as*;
+
+.info {
+	background: $bg-color;
+	padding: 63px 0 68px 0;
+}
+
+.info .section-title {
+	margin-bottom: 46px;
+}
+
+.info__article {
+	width: 879px;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: 15% 24% 61%;
+	padding: 15px 0;
+	border-top: 1px solid #707070;
+}
+
+.info__article:last-child {
+	border-bottom: 1px solid #707070;
+}
+
+.info__time {
+	grid-column: 1 / 2;
+	font-size: 17px;
+	font-weight: bold;
+	padding-left: 18px;
+}
+
+.info__title {
+	grid-column: 2 / 3;
+	font-size: 20px;
+	font-weight: bold;
+	color: $accent-color;
+	padding-left: 25px;
+}
+
+.info__text {
+	grid-column: 3 / 4;
+	font-size: 17px;;
+	
+		& a {
+		color: $text-color;
+		transition: .3s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+

@@ -1,0 +1,64 @@
+@use "../global/forward" as*;
+
+.access {
+	padding: 63px 0 59px 0;
+}
+
+.access__content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 46px;
+}
+
+.access__content-box {
+	margin-left: 46px;
+}
+
+.access__titlle {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.access__address {
+	margin-top: 15px;
+}
+
+.access__list {
+	display: flex;
+	align-items: baseline;
+
+	&:nth-child(1) {
+		margin-top: 14px;
+	}
+	&:nth-child(2) {
+		margin-top: 8px;
+		padding-bottom: 27px;
+		border-bottom: 1px solid #707070;
+
+		& a {
+			color: $text-color;
+			transition: .3s;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+	&:nth-child(3) {
+		margin-top: 15px;
+	}
+	&:nth-child(4) {
+		margin-top: 4px;
+		padding-bottom: 14px;
+		border-bottom: 1px solid #707070;
+	}
+}
+
+
+
+.blue {
+	font-size: 25px;
+	color: $accent-color;
+	vertical-align: top;
+}

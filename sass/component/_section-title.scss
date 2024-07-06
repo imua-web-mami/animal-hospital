@@ -1,0 +1,18 @@
+@use "../global/forward" as*;
+
+.section-title {
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+
+	&::before {
+		content: url(../img/paw1.png);
+		padding-right: 20px;
+	}
+
+	&::after {
+		content: url(../img/paw1.png);
+		padding-left: 20px;
+	}
+}

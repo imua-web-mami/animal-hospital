@@ -1,0 +1,59 @@
+@use "../global/forward" as*;
+
+.footer {
+	background: $text-color;
+	padding: 66px 0 70px 0;
+	color: $main-color;
+
+	.footer__nav-list {
+		width: calc(737 / 960 * 100%);
+		margin-inline: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-bottom: 21px;
+		border-bottom: 1px solid $main-color;
+
+		.footer__nav-item + .footer__nav-item {
+			margin-left: 14px;
+		}
+
+		.footer__nav-item a {
+			color: $main-color;
+			font-size: 20px;
+			font-weight: bold;
+			transition: .3s;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	.footer__small {
+		margin-top: 27px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.footer__sns-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 8px;
+
+		.footer__sns-item + .footer__sns-item {
+			margin-left: 11px;
+		}
+
+		.footer__sns-item a {
+			transition: .3s;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+}

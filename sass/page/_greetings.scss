@@ -5,13 +5,14 @@
 	text-align: center;
 
 	@include mq(md) {
-		padding: 49px 20px 39px 20px;
+		padding: 49px 0 39px 0;
 	}
 
 	.greetings__title {
 		color: $accent-color;
 		font-size: 30px;
 		font-weight: bold;
+		line-height: 1.6;
 
 		@include mq(md) {
 			font-size: 25px;
@@ -32,12 +33,14 @@
 		}
 
 		&::after {
-			content: url(../img/paw2.svg);
+			content: "";
+			background-image: url(../img/paw2.svg);
+			background-size: contain;
 			width: 84px;
 			height: 77px;
 			position: absolute;
-			top: 47px;
-			right: 26px;
+			bottom: -26px;
+			right: -24px;
 
 			@include mq(md) {
 				width: 68px;

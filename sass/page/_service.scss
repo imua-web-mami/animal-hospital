@@ -52,6 +52,7 @@
 			.service__text {
 				font-size: 17px;
 				margin-top: 8px;
+				text-align: left;
 
 				@include mq(md) {
 					font-size: 16px;

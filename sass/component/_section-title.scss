@@ -1,18 +1,35 @@
 @use "../global/forward" as*;
 
 .section-title {
+	display: inline-block;
+	justify-content: center;
 	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
+	position: relative;
 
 	&::before {
-		content: url(../img/paw1.png);
-		padding-right: 20px;
+		content: "";
+		background-image: url(../img/paw1.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		left: -45px;
+		top: 8px;
 	}
 
 	&::after {
-		content: url(../img/paw1.png);
-		padding-left: 20px;
+		content: "";
+		background-image: url(../img/paw1.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		right: -45px;
+		top: 8px;
 	}
 }

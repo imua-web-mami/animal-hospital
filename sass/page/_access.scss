@@ -19,6 +19,21 @@
 	}
 }
 
+.access__map-box {
+	width: 440px;
+	height: 300px;
+
+	@include mq(md) {
+		width: 100%;
+		height: 222px;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
 .access__content-box {
 	margin-left: 46px;
 	line-height: 1.5;
